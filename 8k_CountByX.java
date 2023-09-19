@@ -9,4 +9,12 @@ Examples
 countBy(1,10)  // should return  {1,2,3,4,5,6,7,8,9,10}
 countBy(2,5)  // should return {2,4,6,8,10}
 */
-
+public class Kata {
+    public static int[] countBy(int x, int n) {
+        int[] result = new int[n];
+        for (int i = 0; i < n; i++) {
+            result[i] = x * (i + 1);
+        }
+        return result;
+    }
+}
